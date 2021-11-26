@@ -99,6 +99,10 @@
     <Compile Include="Migrations\202111261219232_DeptWithEnum.designer.cs">
       <DependentUpon>202111261219232_DeptWithEnum.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111261555445_AutherFieldAdded.cs" />
+    <Compile Include="Migrations\202111261555445_AutherFieldAdded.designer.cs">
+      <DependentUpon>202111261555445_AutherFieldAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -140,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111261219232_DeptWithEnum.resx">
       <DependentUpon>202111261219232_DeptWithEnum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111261555445_AutherFieldAdded.resx">
+      <DependentUpon>202111261555445_AutherFieldAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
