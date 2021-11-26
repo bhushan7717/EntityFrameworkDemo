@@ -69,6 +69,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\BloggingContext.cs" />
+    <Compile Include="Data\IBloggingContext.cs" />
+    <Compile Include="Data\MyConfiguration.cs" />
+    <Compile Include="Migrations\202111260922089_InitialCreate.cs" />
+    <Compile Include="Migrations\202111260922089_InitialCreate.designer.cs">
+      <DependentUpon>202111260922089_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111261132249_AddUrl.cs" />
+    <Compile Include="Migrations\202111261132249_AddUrl.designer.cs">
+      <DependentUpon>202111261132249_AddUrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111261138525_UserTableAdded.cs" />
+    <Compile Include="Migrations\202111261138525_UserTableAdded.designer.cs">
+      <DependentUpon>202111261138525_UserTableAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111261155320_RemoveDisplayNameChange.cs" />
+    <Compile Include="Migrations\202111261155320_RemoveDisplayNameChange.designer.cs">
+      <DependentUpon>202111261155320_RemoveDisplayNameChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111261201107_PassportTableAdded.cs" />
+    <Compile Include="Migrations\202111261201107_PassportTableAdded.designer.cs">
+      <DependentUpon>202111261201107_PassportTableAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111261203387_PassportTableAdded1.cs" />
+    <Compile Include="Migrations\202111261203387_PassportTableAdded1.designer.cs">
+      <DependentUpon>202111261203387_PassportTableAdded1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111261219232_DeptWithEnum.cs" />
+    <Compile Include="Migrations\202111261219232_DeptWithEnum.designer.cs">
+      <DependentUpon>202111261219232_DeptWithEnum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -87,6 +118,29 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202111260922089_InitialCreate.resx">
+      <DependentUpon>202111260922089_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111261132249_AddUrl.resx">
+      <DependentUpon>202111261132249_AddUrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111261138525_UserTableAdded.resx">
+      <DependentUpon>202111261138525_UserTableAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111261155320_RemoveDisplayNameChange.resx">
+      <DependentUpon>202111261155320_RemoveDisplayNameChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111261201107_PassportTableAdded.resx">
+      <DependentUpon>202111261201107_PassportTableAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111261203387_PassportTableAdded1.resx">
+      <DependentUpon>202111261203387_PassportTableAdded1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111261219232_DeptWithEnum.resx">
+      <DependentUpon>202111261219232_DeptWithEnum.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
